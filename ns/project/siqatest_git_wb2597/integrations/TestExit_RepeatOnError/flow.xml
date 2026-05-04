@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<RETRY NAME="REPEATFORCOUNT" TIMEOUT="" COUNT="2" BACK-OFF="0" LOOP-ON="SUCCESS">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<SEQUENCE NAME="IF" EXIT-ON="FAILURE" CONDITION="((&#39;1&#39;==&#39;1&#39;))" FORM="IF">
+
+  <!-- nodes -->
+
+<EXIT NAME="EXIT" FROM="$parent" SIGNAL="FAILURE" FAILURE-MESSAGE="Exit Message #1">
+  <COMMENT></COMMENT>
+</EXIT>
+</SEQUENCE>
+</RETRY>
+</FLOW>
