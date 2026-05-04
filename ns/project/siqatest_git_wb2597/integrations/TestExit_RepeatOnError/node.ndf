@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Rima.Barman@ibm.com</value>
-    <value name="lastModifiedDate">1777872469772</value>
+    <value name="lastModifiedDate">1777879056012</value>
     <value name="displayName">TestExit_RepeatOnError</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -58,10 +58,10 @@
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
         <record name="value" javaclass="com.wm.util.Values">
-          <value name="value">2</value>
+          <value name="value">3</value>
           <Boolean name="isConstantValue">true</Boolean>
           <value name="displayLabel">value</value>
-          <value name="dataType">string</value>
+          <value name="dataType">number</value>
         </record>
       </record>
       <record name="/0/0" javaclass="com.wm.util.Values">
