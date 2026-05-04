@@ -18,7 +18,7 @@
 
   <!-- nodes -->
 
-<EXIT NAME="EXIT" FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Exit Message #1">
+<EXIT NAME="EXIT" FROM="$parent" SIGNAL="FAILURE" FAILURE-MESSAGE="Exit Message #1">
   <COMMENT></COMMENT>
 </EXIT>
 </SEQUENCE>
