@@ -7,6 +7,19 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqatest_git_wb2597.integrations:TestExit_RepeatOnError
+  packages:
+  - name: SiqaTest_GIT_WB2597Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
+- serviceName: project.siqatest_git_wb2597.integrations:repeatOnErrDAF
+  packages:
+  - name: SiqaTest_GIT_WB2597Project
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
