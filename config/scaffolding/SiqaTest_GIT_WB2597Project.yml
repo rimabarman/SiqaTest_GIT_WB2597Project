@@ -20,6 +20,18 @@ services:
   packages:
   - name: SiqaTest_GIT_WB2597Project
     version: "1.0"
+- serviceName: project.siqatest_git_wb2597.integrations:testrepeatonERR
+  packages:
+  - name: SiqaTest_GIT_WB2597Project
+    version: "1.0"
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
